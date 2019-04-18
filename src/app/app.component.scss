@@ -49,3 +49,24 @@ body{
     }
 }
 
+.fontspe{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+    font-size: 40px;
+}
+
+.fontspe2{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .marty {
+      display: none!important;
+    }
+  }
+
+  .paddingvortex{
+      padding-top: 40px;
+  }
