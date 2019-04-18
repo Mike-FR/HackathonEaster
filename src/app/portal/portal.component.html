@@ -1,8 +1,12 @@
 <router-outlet></router-outlet>
-<button type="button" routerLink="">Rentrer sur terre</button>
-<button type="button" (click)="eggData.getEggInfo()">Obtenir un oeuf</button>
-<p *ngIf="eggData.eggImg"> {{eggName}} </p>
-<img *ngIf="eggData.eggImg" [src]="eggData.eggImg" style="width: 200px" />
-<img
-  src="https://nebula.wsimg.com/a1cc1c259eeae5a37cb70f0ab3b46217?AccessKeyId=0FDC079973B83A5D980E&disposition=0&alloworigin=1"
-  alt="landscape">
+
+<div class="container-fluid p-0" (mouseenter)="eggData.getEggInfo()">
+  <img src="../../assets/vortex1.png" class="absoluteoeuf taillevortex rotating" routerLink="" alt="portalrturn">
+
+                
+    <img *ngIf="eggData.eggImg" (click)="clickEvent()" [ngClass]="{'displayoeuf':status===true}" class=" absoluteoeuf oeuf animated bounce  slower" [src]="eggData.eggImg" style="width: 200px" /> 
+    <p class=" absoluteoeuf catch" *ngIf="status">Catch!!</p>
+  
+ 
+  <img src="../../assets/Rick_Morty_S01_Screenshot_0159.jpg.625cd49cb726d62aa988645078714125.jpg">
+</div>

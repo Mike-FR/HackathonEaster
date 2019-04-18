@@ -24,4 +24,9 @@ export class PortalComponent implements OnInit {
     })
   }
 
+status: boolean = false;
+clickEvent(){
+    this.status = !this.status;       
+}
+
 }

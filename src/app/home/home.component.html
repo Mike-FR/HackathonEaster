@@ -12,11 +12,17 @@
         <p class="fontspe animated bounceIn slower">Use portals for find the eggs </p>
       </div>
     </div>
-    <div class="col-12 col-sm-1 ">
-      <img src="../../assets/List eggs.png" class="img-fluid animated infinite bounce delay-4s slower"
-        alt="List eggs" />
+    <div class="col-12 col-sm-1">
+      <img (click)="collectList()" src="../../assets/List eggs.png"
+        class="img-fluid animated infinite bounce delay-4s slower" alt="List eggs" />
       <p class="fontspe2 animated bounceIn slower ">your eggs </p>
-
+      <div *ngIf="collection">
+          <ul class="list-group list-group-flush">
+              <li *ngFor="let item of items" class="list-group-item"><img src="{{eggdata.img}}" alt=""><br>
+              <p>{{eggdata.name}}</p></li>
+            </ul>
+        </div>
+     
     </div>
   </div>
   <div class="row">

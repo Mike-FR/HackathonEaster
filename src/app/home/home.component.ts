@@ -10,16 +10,18 @@ export class HomeComponent implements OnInit {
 
   src = false
   collection = false
-  @ViewChild('videoPlayer') videoPlayer: ElementRef
+  @ViewChild('videoPlayer') videoplayer: ElementRef;
 
+toggleVideo(event: any) {
+    this.videoplayer.nativeElement.play();
+}
+maggieClicked(){
+return this.src = true
+}
+collectList(){
+return this.collection = true
+}
   constructor(private eggData: EggsDataService) { }
-
-  toggleVideo(event: any) {
-    this.videoPlayer.nativeElement.play();
-  }
-  maggieClicked() {
-    return this.src = true
-  }
 
   ngOnInit() {
   }
