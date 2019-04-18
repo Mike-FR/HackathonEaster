@@ -19,8 +19,11 @@ body{
  
  .marty{
      align-items: flex-end;
- 
- }
+  }
+  .maggie {
+    
+    align-items: flex-end;
+}
  
  
  .rotating {
@@ -70,4 +73,13 @@ body{
    .paddingvortex{
        padding-top: 40px;
    }
- 
+ // vidéo easter egg
+.video {
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+
+
+}
