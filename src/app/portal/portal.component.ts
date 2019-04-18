@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EggApiService } from '../egg-api.service'
+import { EggsDataService } from '../eggs-data.service';
 
 
 @Component({
@@ -9,21 +10,11 @@ import { EggApiService } from '../egg-api.service'
 })
 export class PortalComponent implements OnInit {
 
-  egg: any;
-  eggImg: string;
-  eggName: string;
-
-  constructor(private eggAPI: EggApiService) {
+  egg:any
+ 
+  constructor(private eggAPI: EggApiService, private eggData: EggsDataService) {
 
   }
-
-  getEggImg() {
-    this.eggAPI.getEggs().subscribe(result => {
-      this.eggImg = result.image;
-      this.eggName = result.name;
-    })
-  }
-
 
 
   ngOnInit() {

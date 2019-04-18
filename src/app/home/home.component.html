@@ -1,7 +1,7 @@
 <div class="container-fluid backi">
-    <video class="video px-auto" *ngIf="src" controls (click)="toggleVideo()" #videoPlayer autoplay>
-        <source src="../../assets/couchgag.mp4" type="video/mp4" />
-      </video>
+  <video class="video px-auto" *ngIf="src" controls (click)="toggleVideo()" #videoPlayer autoplay>
+    <source src="../../assets/couchgag.mp4" type="video/mp4" />
+  </video>
   <div class="row page-header  ">
     <div class="col-1 justify-content-center">
     </div>
@@ -22,7 +22,7 @@
     <div class="col-sm-2 d-flex align-items-end marty">
       <img src="../../assets/perso2.png" class="img-fluid  " alt="marty" usemap=#maggiemap />
     </div>
-    <div class="col-sm-1 d-flex align-items-end" >
+    <div class="col-sm-1 d-flex align-items-end">
       <img src="../assets/maggie.png" alt="maggie" (click)="maggieClicked()">
     </div>
 
@@ -38,7 +38,8 @@
       <img src="../../assets/perso1.png" class="img-fluid  " alt="rick" />
     </div>
   </div>
+
+  <ul *ngFor="let item of eggData.arrayEggs">
+    <li>{{item.img}}</li>
+  </ul>
 </div>
-
-
-
