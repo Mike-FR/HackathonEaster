@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hackathonEasterEgg';
+ src = false
+  @ViewChild('videoPlayer') videoplayer: ElementRef;
+
+toggleVideo(event: any) {
+    this.videoplayer.nativeElement.play();
+}
+maggieClicked(){
+return this.src = true
+}
 }

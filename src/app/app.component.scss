@@ -48,4 +48,10 @@ body{
             -webkit-transform: rotate(-359deg);
     }
 }
-
+// vidéo easter egg
+.video {
+    z-index: 15;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
