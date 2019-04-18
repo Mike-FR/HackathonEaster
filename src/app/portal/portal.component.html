@@ -3,10 +3,11 @@
 <div class="container-fluid p-0" (mouseenter)="eggData.getEggInfo()">
   <img src="../../assets/vortex1.png" class="absoluteoeuf taillevortex rotating" routerLink="" alt="portalrturn">
 
-                
-    <img *ngIf="eggData.eggImg" (click)="clickEvent()" [ngClass]="{'displayoeuf':status===true}" class=" absoluteoeuf oeuf animated bounce  slower" [src]="eggData.eggImg" style="width: 200px" /> 
-    <p class=" absoluteoeuf catch" *ngIf="status">Catch!!</p>
-  
- 
-  <img src="../../assets/Rick_Morty_S01_Screenshot_0159.jpg.625cd49cb726d62aa988645078714125.jpg">
+
+  <img *ngIf="eggData.eggImg" (click)="clickEvent()" [ngClass]="{'displayoeuf':status===true}"
+    class=" absoluteoeuf oeuf animated bounce  slower" [src]="eggData.eggImg" style="width: 200px" />
+  <p class=" absoluteoeuf catch" *ngIf="status">Catch!!</p>
+
+
+  <img [src]="eggData.pickLandscape()" style="width: 100%">
 </div>

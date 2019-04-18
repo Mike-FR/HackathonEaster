@@ -3,7 +3,8 @@
   <video class="video px-auto" *ngIf="src" controls (click)="toggleVideo()" #videoPlayer autoplay>
     <source src="../../assets/couchgag.mp4" type="video/mp4" />
   </video>
-  <div class="row page-header  ">
+
+  <div class="row page-header">
     <div class="col-1 justify-content-center">
     </div>
     <div class="col-10 justify-content-center">
@@ -15,14 +16,13 @@
     <div class="col-12 col-sm-1">
       <img (click)="collectList()" src="../../assets/List eggs.png"
         class="img-fluid animated infinite bounce delay-4s slower" alt="List eggs" />
-      <p class="fontspe2 animated bounceIn slower ">your eggs </p>
-      <div *ngIf="collection">
-          <ul class="list-group list-group-flush">
-              <li *ngFor="let item of items" class="list-group-item"><img src="{{eggdata.img}}" alt=""><br>
-              <p>{{eggdata.name}}</p></li>
-            </ul>
-        </div>
-     
+      <p class="fontspe2 animated bounceIn slower ">your eggs</p>
+      <div *ngIf="collection" >
+        <ul *ngFor="let item of eggData.arrayEggs">
+          <img src="{{item.img}}" alt="" class="eggSizeList">
+        </ul>
+      </div>
+
     </div>
   </div>
   <div class="row">
@@ -34,7 +34,7 @@
     </div>
 
     <div class="col-sm-3 paddingvortex animated bounceIn slower">
-      <img src="../../assets/vortex2.png" class="img-fluid rotating " alt="vortex1" routerLink="/portal" />
+      <img src="../../assets/vortex2.png" class="img-fluid rotating " alt="vortex1" routerLink="/portal" (click)="egg" />
     </div>
     <div class="col-sm-3 paddingvortex animated bounceIn slower">
       <img src="../../assets/vortex1.png" class="img-fluid rotatingdeux" alt="vortex2" routerLink="/portal" />
@@ -46,7 +46,5 @@
     </div>
   </div>
 
-  <ul *ngFor="let item of eggData.arrayEggs">
-    <li>{{item.img}}</li>
-  </ul>
+
 </div>

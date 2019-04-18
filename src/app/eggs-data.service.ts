@@ -12,7 +12,24 @@ export class EggsDataService {
   eggsInfo: any = {}
   arrayEggs: any = []
 
+  landscape = [
+    '../../assets/landscape/891fd98bffd29580b267ff1df5b0a9c2.png',
+    '../../assets/landscape/a1cc1c259eeae5a37cb70f0ab3b46217.jpeg',
+    '../../assets/landscape/big_1473924546_image.jpg',
+    '../../assets/landscape/Rick_Morty_S01_Screenshot_0159.jpg.625cd49cb726d62aa988645078714125.jpg',
+    '../../assets/landscape/wp1822807.jpg'
+
+  ]
+
   constructor(private eggAPI: EggApiService) { }
+
+  pickLandscape() {
+    let index = Math.floor(Math.random() * this.landscape.length)
+    let keepNumTile = this.landscape[index]
+    console.log(keepNumTile)
+    
+    return keepNumTile
+  }
 
   getEggInfo() {
     this.eggAPI.getEggs().subscribe(result => {
