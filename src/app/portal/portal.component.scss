@@ -1,0 +1,47 @@
+
+.container-fluid{overflow: hidden;}
+
+.absoluteoeuf{
+    position: absolute;
+}
+
+.oeuf{
+   left:40%;
+    top:50%;
+    transform: translate(-50%,-50%); 
+    
+}
+
+.taillevortex{
+    width: 17%!important;
+    /* left:50%;
+    top:50%;
+    transform: translate(-50%,-50%); */
+}
+
+.rotating {
+    -webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+
+.displayoeuf{
+    display: none;
+}
+
+.catch{left:45%;
+    top:40%;
+    transform: translate(-50%,-50%); 
+    font-family: 'Gloria Hallelujah', cursive;
+     color: white;
+     font-size: 80px;
+     text-shadow: 1px 4px 4px #4F5685; 
+}
