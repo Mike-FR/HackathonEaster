@@ -7,6 +7,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   src = false
+  collection = false
   @ViewChild('videoPlayer') videoplayer: ElementRef;
 
 toggleVideo(event: any) {
@@ -14,6 +15,9 @@ toggleVideo(event: any) {
 }
 maggieClicked(){
 return this.src = true
+}
+collectList(){
+return this.collection = true
 }
   constructor() { }
 
