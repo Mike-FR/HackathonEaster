@@ -1,6 +1,6 @@
 <router-outlet></router-outlet>
 
-<div class="container-fluid p-0" (mouseenter)="eggData.getEggInfo()">
+<div class="container-fluid p-0" (mouseenter)="eggData.getEggInfo();eggData.pickLandscape()">
   <img src="../../assets/vortex1.png" class="absoluteoeuf taillevortex rotating" routerLink="" alt="portalrturn">
 
 
@@ -9,5 +9,5 @@
   <p class=" absoluteoeuf catch" *ngIf="status">Catch!!</p>
 
 
-  <img [src]="eggData. pickLandscape()" style="width: 100%">
+  <img [src]="eggData.currentLand" style="width: 100%">
 </div>

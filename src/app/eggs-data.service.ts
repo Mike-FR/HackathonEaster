@@ -12,8 +12,9 @@ export class EggsDataService {
   eggRare: string;
   eggsInfo: any = {}
   arrayEggs: any = []
-
   arrayLand: any = []
+
+  currentLand: string;
 
   landscape = [
     '../../assets/landscape/891fd98bffd29580b267ff1df5b0a9c2.png',
@@ -25,11 +26,6 @@ export class EggsDataService {
     '../../assets/landscape/rick-and-morty-background-21.jpg',
     '../../assets/landscape/rick-and-morty-miniverse.jpg',
     '../../assets/landscape/S3e5_resort.png',
-  
-
-
-
-
   ]
 
   constructor(private eggAPI: EggApiService) { }
@@ -37,10 +33,8 @@ export class EggsDataService {
   pickLandscape() {
     let index = Math.floor(Math.random() * this.landscape.length)
     let keepNumTile = this.landscape[index]
-    console.log(this.arrayLand)
+    this.currentLand = keepNumTile
     return keepNumTile
-    
-
   }
 
   getEggInfo() {
