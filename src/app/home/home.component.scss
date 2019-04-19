@@ -62,7 +62,8 @@ body{
  .fontspe2{
      font-family: 'Gloria Hallelujah', cursive;
      color: white;
-     font-size: 20px;
+     font-size: 18px;
+    
  }
  
  @media screen and (min-width: 200px) and (max-width: 640px) {
@@ -82,7 +83,8 @@ body{
     left: 50%;
     top: 60%;
     transform: translate(-50%,-50%);
-}
+    border: solid 5px white;}
+    
 .list-group {
     z-index: 200;
     position: absolute;
@@ -91,4 +93,13 @@ body{
 
 .eggSizeList {
     width: 100px;
+    padding-top: 10px;
 }
+
+.fontrarity{
+    font-family: 'Gloria Hallelujah', cursive;
+     color: #55c99f;
+     font-size: 18px;
+
+}
+

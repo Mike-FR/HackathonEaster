@@ -10,8 +10,8 @@ import { EggsDataService } from '../eggs-data.service';
 })
 export class PortalComponent implements OnInit {
 
-  egg:any
- 
+  egg: any
+
   constructor(private eggAPI: EggApiService, private eggData: EggsDataService) {
 
   }
@@ -24,9 +24,9 @@ export class PortalComponent implements OnInit {
     })
   }
 
-status: boolean = false;
-clickEvent(){
-    this.status = !this.status;       
-}
+  status: boolean = false;
+  clickEvent() {
+    this.status = !this.status;
+  }
 
 }
