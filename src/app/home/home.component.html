@@ -1,20 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
 <div class="container-fluid backi">
-    <video class="video px-auto" *ngIf="src" controls (click)="toggleVideo()" #videoPlayer autoplay>
-        <source src="../../assets/couchgag.mp4" type="video/mp4" />
-      </video>
-  <div class="row page-header  ">
+  <video class="video px-auto " *ngIf="src" controls (click)="toggleVideo()" #videoPlayer autoplay>
+    <source src="../../assets/couchgag.mp4" type="video/mp4" />
+  </video>
+
+  <div class="row page-header">
     <div class="col-1 justify-content-center">
     </div>
     <div class="col-10 justify-content-center">
       <img src="../../assets/Logo.png" class="img-fluid animated bounceIn slower " alt="Logo Rick" />
       <div>
-        <p class="fontspe animated bounceIn slower">Use portals for find the eggs </p>
+        <p class="fontspe animated bounceIn slower">Use portals to find the eggs </p>
       </div>
     </div>
-    <div class="col-12 col-sm-1 ">
-      <img src="../../assets/List eggs.png" class="img-fluid animated infinite bounce delay-4s slower"
-        alt="List eggs" />
-      <p class="fontspe2 animated bounceIn slower ">your eggs </p>
+    <div class="col-12 col-sm-1">
+        <p class="fontspe2 animated bounceIn slower ">your last eggs</p>
+      <img (click)="collectList();eggData.getEggInfo()" src="../../assets/List eggs.png"
+        class="img-fluid animated infinite bounce delay-4s slower" alt="List eggs" />
+      
+      
+      <div >
+        
+          <img src="{{eggData.eggImg}}" alt="" class="eggSizeList ">
+          <p class="fontrarity">{{eggData.eggRare}}</p>
+
+      
+      </div>
 
     </div>
   </div>
@@ -22,12 +33,12 @@
     <div class="col-sm-2 d-flex align-items-end marty">
       <img src="../../assets/perso2.png" class="img-fluid  " alt="marty" usemap=#maggiemap />
     </div>
-    <div class="col-sm-1 d-flex align-items-end" >
+    <div class="col-sm-1 d-flex align-items-end">
       <img src="../assets/maggie.png" alt="maggie" (click)="maggieClicked()">
     </div>
 
     <div class="col-sm-3 paddingvortex animated bounceIn slower">
-      <img src="../../assets/vortex2.png" class="img-fluid rotating " alt="vortex1" routerLink="/portal" />
+      <img src="../../assets/vortex2.png" class="img-fluid rotating " alt="vortex1" routerLink="/portal" (click)="egg" />
     </div>
     <div class="col-sm-3 paddingvortex animated bounceIn slower">
       <img src="../../assets/vortex1.png" class="img-fluid rotatingdeux" alt="vortex2" routerLink="/portal" />
@@ -38,7 +49,6 @@
       <img src="../../assets/perso1.png" class="img-fluid  " alt="rick" />
     </div>
   </div>
+
+
 </div>
-
-
-
