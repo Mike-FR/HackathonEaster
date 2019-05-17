@@ -1,46 +1,56 @@
-
-.container-fluid{overflow: hidden;}
-
-.absoluteoeuf{
-    position: absolute;
+.container-fluid {
+  overflow: hidden;
 }
 
-.oeuf{
-   left:40%;
-    top:50%;
-    transform: translate(-50%,-50%); 
-    
+.absoluteoeuf {
+  position: absolute;
 }
 
-.taillevortex{
-    width: 17%!important;
-    left:5%;
-    top:5%;
+h4 {
+  position: absolute;
+  left: 10%;
+  top: 1%;
+  font-family: "Gloria Hallelujah", cursive;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.oeuf {
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 15vw;
+}
+
+.taillevortex {
+  width: 17% !important;
+  left: 5%;
+  top: 5%;
 }
 
 .rotating {
-    -webkit-animation: rotation 5s infinite linear;
+  -webkit-animation: rotation 5s infinite linear;
 }
 
 @-webkit-keyframes rotation {
-    from {
-            -webkit-transform: rotate(0deg);
-    }
-    to {
-            -webkit-transform: rotate(359deg);
-    }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }
 
-
-.displayoeuf{
-    display: none;
+.displayoeuf {
+  display: none;
 }
 
-.catch{left:45%;
-    top:40%;
-    transform: translate(-50%,-50%); 
-    font-family: 'Gloria Hallelujah', cursive;
-     color: white;
-     font-size: 80px;
-     text-shadow: 1px 4px 4px #4F5685; 
+.catch {
+  left: 45%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-family: "Gloria Hallelujah", cursive;
+  color: white;
+  font-size: 80px;
+  text-shadow: 1px 4px 4px #4f5685;
 }
