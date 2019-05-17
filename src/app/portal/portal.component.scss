@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 
-.absoluteoeuf {
+.absolute {
   position: absolute;
 }
 
@@ -20,6 +20,7 @@ h4 {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 15vw;
+  z-index: 10;
 }
 
 .taillevortex {
@@ -41,12 +42,12 @@ h4 {
   }
 }
 
-.displayoeuf {
-  display: none;
-}
+// .displayoeuf {
+//   display: none;
+// }
 
 .catch {
-  left: 45%;
+  left: 47%;
   top: 40%;
   transform: translate(-50%, -50%);
   font-family: "Gloria Hallelujah", cursive;

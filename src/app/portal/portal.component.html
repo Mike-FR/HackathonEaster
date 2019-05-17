@@ -2,12 +2,12 @@
 
 <div class="container-fluid p-0">
   <h4>Back home</h4>
-  <img src="/assets/vortex1.png" class="absoluteoeuf taillevortex rotating" routerLink="" alt="portalrturn">
+  <img src="/assets/vortex1.png" class="absolute taillevortex rotating" routerLink="" alt="portalrturn">
 
 
   <img *ngIf="eggData.eggImg" (click)="clickEvent()" [ngClass]="{'displayoeuf':status===true}"
-    class="absoluteoeuf oeuf animated bounce slower" [src]="eggData.eggImg"/>
-  <p class="absoluteoeuf catch" *ngIf="status">Catch!!</p>
+    class="absolute oeuf animated bounce slower" [src]="eggData.eggImg"/>
+  <p class="absolute catch" *ngIf="status">Catch!!</p>
 
 
   <img [src]="eggData.currentLand" style="width: 100%">
