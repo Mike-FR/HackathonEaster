@@ -15,7 +15,6 @@ export class PortalComponent implements OnInit {
 
 
   ngOnInit() {
-
     this.eggData.pickLandscape();
     this.eggData.getEggInfo();
   }
