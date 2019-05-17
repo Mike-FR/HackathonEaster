@@ -10,15 +10,12 @@ import { EggsDataService } from '../eggs-data.service';
 })
 export class PortalComponent implements OnInit {
 
-  egg: any
 
   constructor(public eggAPI: EggApiService, public eggData: EggsDataService) { }
 
 
   ngOnInit() {
-    this.eggAPI.getEggs().subscribe(result => {
-      this.egg = result;
-    });
+
     this.eggData.pickLandscape();
     this.eggData.getEggInfo();
   }

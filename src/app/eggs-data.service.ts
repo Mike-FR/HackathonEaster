@@ -13,7 +13,7 @@ export class EggsDataService {
   eggsInfo: any = {};
   arrayEggs: any = [];
   arrayLand: any = [];
-  
+
   currentLand: string;
 
   landscape = [
@@ -45,8 +45,6 @@ export class EggsDataService {
       this.eggsInfo = { img: this.eggImg, name: this.eggName };
 
       this.arrayEggs.push(this.eggsInfo)
-
-      console.log(this.arrayEggs)
     });
   }
 }
