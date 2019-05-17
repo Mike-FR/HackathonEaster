@@ -21,7 +21,7 @@ class ResultAPI {
 })
 export class EggApiService {
 
-  urlAPI = "http://easteregg.wildcodeschool.fr/api/eggs/random"
+  urlAPI = "https://easteregg.wildcodeschool.fr/api/eggs/random"
 
   constructor(private http: HttpClient) { }
 
