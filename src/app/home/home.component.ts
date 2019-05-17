@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   collectList() {
     return this.collection = true
   }
-  constructor(private eggData: EggsDataService) { }
+  constructor(public eggData: EggsDataService) { }
 
   ngOnInit() {
   }

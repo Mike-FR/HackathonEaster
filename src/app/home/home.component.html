@@ -14,17 +14,14 @@
       </div>
     </div>
     <div class="col-12 col-sm-1">
-        <p class="fontspe2 animated bounceIn slower ">your last eggs</p>
-      <img (click)="collectList();eggData.getEggInfo()" src="../../assets/List eggs.png"
+      <p class="fontspe2 animated bounceIn slower ">your last eggs</p>
+      <img (click)="collectList()" src="../../assets/List eggs.png"
         class="img-fluid animated infinite bounce delay-4s slower" alt="List eggs" />
-      
-      
-      <div >
-        
-          <img src="{{eggData.eggImg}}" alt="" class="eggSizeList ">
-          <p class="fontrarity">{{eggData.eggRare}}</p>
 
-      
+
+      <div>
+        <img src="{{eggData.eggImg}}" alt="" class="eggSizeList ">
+        <p class="fontrarity">{{eggData.eggRare}}</p>
       </div>
 
     </div>
@@ -38,7 +35,7 @@
     </div>
 
     <div class="col-sm-3 paddingvortex animated bounceIn slower">
-      <img src="../../assets/vortex2.png" class="img-fluid rotating " alt="vortex1" routerLink="/portal" (click)="egg" />
+      <img src="../../assets/vortex2.png" class="img-fluid rotating " alt="vortex1" routerLink="/portal"/>
     </div>
     <div class="col-sm-3 paddingvortex animated bounceIn slower">
       <img src="../../assets/vortex1.png" class="img-fluid rotatingdeux" alt="vortex2" routerLink="/portal" />

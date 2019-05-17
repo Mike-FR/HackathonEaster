@@ -12,7 +12,7 @@ export class PortalComponent implements OnInit {
 
   egg: any
 
-  constructor(private eggAPI: EggApiService, private eggData: EggsDataService) {
+  constructor(public eggAPI: EggApiService, public eggData: EggsDataService) {
 
   }
 
