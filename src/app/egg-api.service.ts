@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 
 class ResultAPI {
-  id: string
+  id: string;
   name: string;
   color: string;
   caliber: string;
@@ -13,7 +13,7 @@ class ResultAPI {
   validity: string;
   rarity: string;
   image: string;
-  power: string
+  power: string;
 }
 
 @Injectable({

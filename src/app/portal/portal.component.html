@@ -5,8 +5,7 @@
   <img src="/assets/vortex1.png" class="absolute taillevortex rotating" routerLink="" alt="portalrturn">
 
 
-  <img (click)="clickEvent()" [ngClass]="{'displayoeuf':status===true}"
-    class="absolute oeuf animated bounce slower" [src]="eggData.eggImg"/>
+  <img (click)="clickEvent()" [ngClass]="{'displayoeuf':status===true}" class="absolute oeuf animated bounce slower" [src]="eggData.eggImg" alt="Oeuf"/>
   <p class="absolute catch" *ngIf="status">Catch!!</p>
 
 
